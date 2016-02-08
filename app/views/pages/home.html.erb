@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+      <meta charset="utf-8" />
+        <title>Alpha-Blog</title>
+    </head>
+    <body>
+      <style>
+
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          margin: 0;
+          padding: 0;
+          background: url(http://www.gratisography.com/pictures/239_1.jpg) no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+
+        #container {
+          position: relative;
+          min-height: 100%;
+        }
+
+        header {
+          width: 100%;
+          background-color: black;
+          color: white;
+          margin: 0;
+          text-align: center;
+          padding: 15px 0;
+          font-family: 'Anton', sans-serif;
+          font-size: 0.8rem;
+          position: fixed;
+          top: 0;
+        }
+
+        main {
+          margin: 20% auto;
+          padding: 30px;
+          background-color: rgba(255,255,255,0.4);
+          color: black;
+          font-family: 'Anton', sans-serif;
+          text-align: center;
+        }
+
+        main h1 {
+          font-size: 4rem;
+        }
+
+        footer {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          background-color: darkgray;
+          text-align: center;
+          text-transform: uppercase;
+          height: 40px;
+          font-family: Anton, sans-serif;
+        }
+
+         footer p a {
+          text-decoration: none;
+          text-align: center;
+          color: black;
+          text-transform: uppercase;
+          display: inline-block;
+          padding: 10px;
+        }
+
+        footer p a:hover {
+          text-decoration: underline;
+        }
+
+        footer p a:after, footer p a:before {
+          content: "  |  ";
+        }
+
+      </style>
+     <div id="container">
+        <header>
+          <h1>homepage</h1>
+        </header>
+
+        <main>
+          <h1>alpha-blog</h1>
+          <p>building a web-application</p>
+        </main>
+
+        <footer>
+          <p>
+          <%= link_to 'About', about_path %>
+          </p>
+        </footer>
+      </div>
+    </body>
+</html>
